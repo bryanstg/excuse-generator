@@ -29,6 +29,12 @@
   border-radius: 15px;
   box-shadow: 3px 5px 4px rgb(0, 0, 0);
 }
+.excuse__box--main-phrase {
+  width: 85%;
+}
+.excuse__box--second-phrase {
+  width: 65%;
+}
 .excuse__footer {
   color: #fff;
   justify-self: flex-end;
