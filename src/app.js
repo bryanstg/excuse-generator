@@ -25,5 +25,7 @@ window.onload = function() {
     return oracionRandom;
   }
   let excuse = fraseRandom();
-  document.querySelector("#excuse").innerHTML = excuse;
+  document.querySelector(
+    "#excuse"
+  ).innerHTML = `<h1 style="color: purple;">${excuse}</h1>`;
 };
