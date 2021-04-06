@@ -11,21 +11,17 @@ window.onload = function() {
   let accion = ["se comío", "tiró", "daño", "mojó", "explotó"];
   let que = ["mi tarea", "mi comida", "la laptop", "el teléfono"];
   let cuando = ["esta mañana", "ayer", "justo antes de salir", "anoche"];
-  let emoji = ["😱", "😢", "😦", "🙁", "😟"];
 
   function fraseRandom() {
     let quienRandom = Math.floor(Math.random() * quien.length);
     let accionRandom = Math.floor(Math.random() * accion.length);
     let queRandom = Math.floor(Math.random() * que.length);
     let cuandoRandom = Math.floor(Math.random() * cuando.length);
-    let emojiRandom = Math.floor(Math.random() * emoji.length);
 
-    let oracionRandom = `${quien[quienRandom]} ${accion[accionRandom]} ${que[queRandom]} ${cuando[cuandoRandom]} ${emoji[emojiRandom]}  `;
+    let oracionRandom = `${quien[quienRandom]} ${accion[accionRandom]} ${que[queRandom]} ${cuando[cuandoRandom]}`;
 
     return oracionRandom;
   }
-  let excuse = fraseRandom();
-  document.querySelector(
-    "#excuse"
-  ).innerHTML = `<h1 style="color: purple;">${excuse}</h1>`;
+  let excusa = fraseRandom();
+  document.querySelector("#excusa").innerHTML = `${excusa}`;
 };
